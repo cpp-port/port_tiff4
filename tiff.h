@@ -580,7 +580,7 @@ typedef enum {
 #define     DCSIMAGERFILTER_OTHER       3       /* other filter */
 #define TIFFTAG_DCSINTERPMODE           65551   /* interpolation mode */
 #define     DCSINTERPMODE_NORMAL        0x0     /* whole image, default */
-#define     DCSINTERPMODE_PREVIEW       0x1     /* preview of image (384x256) */
+#define     DCSINTERPMODE_PREVIEW       0x1     /* thumbnail of image (384x256) */
 #define TIFFTAG_DCSBALANCEARRAY         65552   /* color balance values */
 #define TIFFTAG_DCSCORRECTMATRIX        65553   /* color correction values */
 #define TIFFTAG_DCSGAMMA                65554   /* gamma value */
