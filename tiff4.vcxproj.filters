@@ -116,6 +116,12 @@
     <ClCompile Include="PluginTIFF.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="tif_otiff4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tif_tiff4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="t4.h">
