@@ -126,6 +126,7 @@
 #include "tiffiop.h"
 #ifdef OJPEG_SUPPORT
 
+
 /* Configuration defines here are:
  * JPEG_ENCAP_EXTERNAL: The normal way to call libjpeg, uses longjump. In some environments,
  * 	like eg LibTiffDelphi, this is not possible. For this reason, the actual calls to

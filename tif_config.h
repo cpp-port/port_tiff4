@@ -37,22 +37,22 @@
 #define HAVE_MEMSET 1
 
 /* Signed 32-bit type formatter */
-#define TIFF_INT32_FORMAT "%d"
+#define TIFF_INT32_FORMAT "%" PRIi32
 
 /* Unsigned 32-bit type formatter */
-#define TIFF_UINT32_FORMAT "%u"
+#define TIFF_UINT32_FORMAT "%" PRIu32
 
 /* Signed 64-bit type formatter */
-#define TIFF_INT64_FORMAT "%ld"
+#define TIFF_INT64_FORMAT "%" PRIi64
 
 /* Unsigned 64-bit type formatter */
-#define TIFF_UINT64_FORMAT "%lu"
+#define TIFF_UINT64_FORMAT "%" PRIu64
 
 /* Pointer difference type formatter */
-#define TIFF_PTRDIFF_FORMAT "%ld"
+#define TIFF_PTRDIFF_FORMAT "%" PRIiPTR
 
 /* Signed size type formatter */
-#define TIFF_SSIZE_FORMAT "%ld"
+#define TIFF_SSIZE_FORMAT "%" PRIiPTR
 
 /*
 -----------------------------------------------------------------------

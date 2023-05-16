@@ -25,6 +25,7 @@
  */
 
 #include "tiffiop.h"
+#include <inttypes.h>
 #ifdef ZIP_SUPPORT
 /*
  * TIFF Library.

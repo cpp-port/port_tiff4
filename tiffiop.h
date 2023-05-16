@@ -49,6 +49,13 @@
 # include <string.h>
 #endif
 
+
+#ifdef HAVE_INTTYPES_H
+# include <inttypes.h>
+#endif
+
+
+
 #ifdef HAVE_ASSERT_H
 # include <assert.h>
 #else
