@@ -166,7 +166,7 @@
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
       <CompileAsManaged>false</CompileAsManaged>
       <CompileAsWinRT>false</CompileAsWinRT>
-      <ProgramDataBaseFileName>$(SolutionDir)..\..\..\..\operating_system\storage-windows\$(PlatformName)\$(Configuration)\third\library\$(ProjectName).pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(SolutionDir)..\..\operating_system\storage-windows\$(PlatformName)\$(Configuration)\third\library\$(ProjectName).pdb</ProgramDataBaseFileName>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <OpenMPSupport>false</OpenMPSupport>
       <LanguageStandard>stdcpp17</LanguageStandard>
@@ -180,6 +180,7 @@
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <TargetMachine>MachineX86</TargetMachine>
       <SubSystem>Windows</SubSystem>
+      <OutputFile>$(RootParentDirOperatingSystem)storage-windows\$(PlatformName)\$(Configuration)\third\library\$(TargetName)$(TargetExt)</OutputFile>
     </Lib>
     <Link>
       <AdditionalLibraryDirectories>$(OutDir);$(__operating_system)third-universal_windows/thirdparty/library/$(PlatformName)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -203,7 +204,7 @@
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
       <CompileAsManaged>false</CompileAsManaged>
       <CompileAsWinRT>false</CompileAsWinRT>
-      <ProgramDataBaseFileName>$(SolutionDir)..\..\..\..\operating_system\storage-windows\$(PlatformName)\$(Configuration)\third\library\$(ProjectName).pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(SolutionDir)..\..\operating_system\storage-windows\$(PlatformName)\$(Configuration)\third\library\$(ProjectName).pdb</ProgramDataBaseFileName>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <OpenMPSupport>false</OpenMPSupport>
       <LanguageStandard>stdcpp17</LanguageStandard>
@@ -244,7 +245,7 @@
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
       <CompileAsManaged>false</CompileAsManaged>
       <CompileAsWinRT>false</CompileAsWinRT>
-      <ProgramDataBaseFileName>$(SolutionDir)..\..\..\..\operating_system\storage-windows\$(PlatformName)\$(Configuration)\third\library\$(ProjectName).pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(SolutionDir)..\..\operating_system\storage-windows\$(PlatformName)\$(Configuration)\third\library\$(ProjectName).pdb</ProgramDataBaseFileName>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <OpenMPSupport>false</OpenMPSupport>
       <LanguageStandard>stdcpp17</LanguageStandard>
@@ -257,6 +258,7 @@
     <Lib>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <SubSystem>Windows</SubSystem>
+      <OutputFile>$(RootParentDirOperatingSystem)storage-windows\$(PlatformName)\$(Configuration)\third\library\$(TargetName)$(TargetExt)</OutputFile>
     </Lib>
     <Link>
       <AdditionalLibraryDirectories>$(OutDir);$(__operating_system)third-universal_windows/thirdparty/library/$(PlatformName)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -284,7 +286,7 @@
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
       <CompileAsManaged>false</CompileAsManaged>
       <CompileAsWinRT>false</CompileAsWinRT>
-      <ProgramDataBaseFileName>$(SolutionDir)..\..\..\..\operating_system\storage-windows\$(PlatformName)\$(Configuration)\third\library\$(ProjectName).pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(SolutionDir)..\..\operating_system\storage-windows\$(PlatformName)\$(Configuration)\third\library\$(ProjectName).pdb</ProgramDataBaseFileName>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <OpenMPSupport>false</OpenMPSupport>
       <LanguageStandard>stdcpp17</LanguageStandard>
@@ -322,7 +324,7 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <OpenMPSupport>false</OpenMPSupport>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <ProgramDataBaseFileName>$(SolutionDir)..\..\..\..\operating_system\storage-windows\$(PlatformName)\$(Configuration)\third\library\$(ProjectName).pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(SolutionDir)..\..\operating_system\storage-windows\$(PlatformName)\$(Configuration)\third\library\$(ProjectName).pdb</ProgramDataBaseFileName>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
       <CompileAsManaged>false</CompileAsManaged>
       <CompileAsWinRT>false</CompileAsWinRT>
@@ -336,6 +338,7 @@
     <Lib>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <SubSystem>Windows</SubSystem>
+      <OutputFile>$(RootParentDirOperatingSystem)storage-windows\$(PlatformName)\$(Configuration)\third\library\$(TargetName)$(TargetExt)</OutputFile>
     </Lib>
     <Link>
       <AdditionalLibraryDirectories>$(OutDir);$(__operating_system)third-universal_windows/thirdparty/library/$(PlatformName)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -361,7 +364,7 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <OpenMPSupport>false</OpenMPSupport>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <ProgramDataBaseFileName>$(SolutionDir)..\..\..\..\operating_system\storage-windows\$(PlatformName)\$(Configuration)\third\library\$(ProjectName).pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(SolutionDir)..\..\operating_system\storage-windows\$(PlatformName)\$(Configuration)\third\library\$(ProjectName).pdb</ProgramDataBaseFileName>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
       <CompileAsManaged>false</CompileAsManaged>
       <CompileAsWinRT>false</CompileAsWinRT>
@@ -404,7 +407,7 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <OpenMPSupport>false</OpenMPSupport>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <ProgramDataBaseFileName>$(SolutionDir)..\..\..\..\operating_system\storage-windows\$(PlatformName)\$(Configuration)\third\library\$(ProjectName).pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(SolutionDir)..\..\operating_system\storage-windows\$(PlatformName)\$(Configuration)\third\library\$(ProjectName).pdb</ProgramDataBaseFileName>
       <CompileAsManaged>false</CompileAsManaged>
       <CompileAsWinRT>false</CompileAsWinRT>
       <ExceptionHandling>Async</ExceptionHandling>
@@ -417,6 +420,7 @@
     <Lib>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <SubSystem>Windows</SubSystem>
+      <OutputFile>$(RootParentDirOperatingSystem)storage-windows\$(PlatformName)\$(Configuration)\third\library\$(TargetName)$(TargetExt)</OutputFile>
     </Lib>
     <Link>
       <AdditionalLibraryDirectories>$(OutDir);$(__operating_system)third-universal_windows/thirdparty/library/$(PlatformName)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -446,7 +450,7 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <OpenMPSupport>false</OpenMPSupport>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <ProgramDataBaseFileName>$(SolutionDir)..\..\..\..\operating_system\storage-windows\$(PlatformName)\$(Configuration)\third\library\$(ProjectName).pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(SolutionDir)..\..\operating_system\storage-windows\$(PlatformName)\$(Configuration)\third\library\$(ProjectName).pdb</ProgramDataBaseFileName>
       <CompileAsManaged>false</CompileAsManaged>
       <CompileAsWinRT>false</CompileAsWinRT>
       <ExceptionHandling>Async</ExceptionHandling>
