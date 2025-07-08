@@ -43,9 +43,9 @@ _TIFFmemcmp(const void* p1, const void* p2, tmsize_t c)
    return (memcmp(p1, p2, (size_t)c));
 }
 
-// ----------------------------------------------------------
-//   in FreeImage warnings and errors are disabled
-// ----------------------------------------------------------
+ ----------------------------------------------------------
+   in FreeImage warnings and errors are disabled
+ ----------------------------------------------------------
 
 static void
 msdosWarningHandler(const char* module, const char* fmt, va_list ap)

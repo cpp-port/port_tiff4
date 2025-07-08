@@ -45,6 +45,14 @@
 # include <unistd.h>
 #endif
 
+#ifdef HAVE_INTTYPES_H
+# include <inttypes.h>
+#endif
+
+#ifdef HAVE_STDINT_H
+# include <stdint.h>
+#endif
+
 #ifdef HAVE_FCNTL_H
 # include <fcntl.h>
 #endif
@@ -64,7 +72,7 @@ _tiffReadProc(thandle_t fd, void* buf, tmsize_t size)
 		errno=EINVAL;
 		return (tmsize_t) -1;
 	}
-	return ((tmsize_t) read((int) fd, buf, size_io));
+	return ((tmsize_t) read((int)(intptr_t) fd, buf, size_io));
 }
 
 static tmsize_t
@@ -76,7 +84,7 @@ _tiffWriteProc(thandle_t fd, void* buf, tmsize_t size)
 		errno=EINVAL;
 		return (tmsize_t) -1;
 	}
-	return ((tmsize_t) write((int) fd, buf, size_io));
+	return ((tmsize_t) write((int)(intptr_t) fd, buf, size_io));
 }
 
 static uint64
@@ -88,20 +96,20 @@ _tiffSeekProc(thandle_t fd, uint64 off, int whence)
 		errno=EINVAL;
 		return (uint64) -1; /* this is really gross */
 	}
-	return((uint64)lseek((int)fd,off_io,whence));
+	return((uint64)lseek((int)(intptr_t)fd,off_io,whence));
 }
 
 static int
 _tiffCloseProc(thandle_t fd)
 {
-	return(close((int)fd));
+	return(close((int)(intptr_t)fd));
 }
 
 static uint64
 _tiffSizeProc(thandle_t fd)
 {
 	struct stat sb;
-	if (fstat((int)fd,&sb)<0)
+	if (fstat((int)(intptr_t)fd,&sb)<0)
 		return(0);
 	else
 		return((uint64)sb.st_size);

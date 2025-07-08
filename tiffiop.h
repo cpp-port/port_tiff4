@@ -30,7 +30,7 @@
  * ``Library-private'' definitions.
  */
 
-#include "tif_config.h"
+#include "tiff4/tif_config.h"
 
 #ifdef HAVE_FCNTL_H
 # include <fcntl.h>

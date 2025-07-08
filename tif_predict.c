@@ -29,6 +29,7 @@
  *
  * Predictor Tag Support (used by multiple codecs).
  */
+#include "tif_config.h"
 #include "tiffiop.h"
 #include "tif_predict.h"
 

@@ -54,25 +54,25 @@ void TIFFModeCCITTFax3(void){}
 static tsize_t
 _tiffReadProc(thandle_t fd, tdata_t buf, tsize_t size)
 {
-	return (read((int) fd, buf, size));
+	return (read((int)(iptr_t) fd, buf, size));
 }
 
 static tsize_t
 _tiffWriteProc(thandle_t fd, tdata_t buf, tsize_t size)
 {
-	return (write((int) fd, buf, size));
+	return (write((int)(iptr_t) fd, buf, size));
 }
 
 static toff_t
 _tiffSeekProc(thandle_t fd, toff_t off, int whence)
 {
-	return ((toff_t) lseek((int) fd, (off_t) off, whence));
+	return ((toff_t) lseek((int)(iptr_t)fd, (off_t) off, whence));
 }
 
 static int
 _tiffCloseProc(thandle_t fd)
 {
-	return (close((int) fd));
+	return (close((int)(iptr_t)fd));
 }
 
 #include <sys/stat.h>
