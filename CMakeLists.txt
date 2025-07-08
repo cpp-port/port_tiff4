@@ -16,7 +16,6 @@ list(APPEND library_source
         #PluginTIFF.c
         #resource.h
         #ThomasBS.txt
-        tif_config.vc.h
         tif_predict.c
         tif_write.c
         tif_jbig.c
@@ -25,7 +24,6 @@ list(APPEND library_source
         tif_dirread.c
         tif_open.c
         tif_color.c
-        tif_config.wince.h
         tif_pixarlog.c
         tif_tile.c
         tif_config.h
@@ -46,7 +44,6 @@ list(APPEND library_source
         tif_thunder.c
         tif_strip.c
         tif_dumpmode.c
-        tif_config.h-vms
         tif_flush.c
         tif_dirinfo.c
         tif_otiff4.c
@@ -68,7 +65,6 @@ list(APPEND library_source
         tif_packbits.c
         t4.h
         tif_codec.c
-        tif_config.h.in
         resource.h
         tiffio.h
         uvcode.h
