@@ -82,10 +82,9 @@ if(${WINDOWS})
 
 endif()
 
-            add_library(${PROJECT_NAME} SHARED ${library_source})
+add_library(${PROJECT_NAME} SHARED ${library_source})
 
-
-target_link_libraries(${PROJECT_NAME} PRIVATE zlib)
+target_link_libraries(${PROJECT_NAME} PRIVATE zlib jpeg)
 
 target_compile_definitions(${PROJECT_NAME} PRIVATE OPJ_EXPORTS)
 
