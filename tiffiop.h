@@ -44,17 +44,18 @@
 # include <stdlib.h>
 #endif
 
-
 #ifdef HAVE_STRING_H
 # include <string.h>
 #endif
-
 
 #ifdef HAVE_INTTYPES_H
 # include <inttypes.h>
 #endif
 
-
+#ifdef HAVE_IO_H
+# include <fcntl.h>
+# include <io.h>
+#endif
 
 #ifdef HAVE_ASSERT_H
 # include <assert.h>
@@ -65,8 +66,10 @@
 #ifdef HAVE_SEARCH_H
 # include <search.h>
 #else
+#if !defined(_WIN32)
 extern void *lfind(const void *, const void *, size_t *, size_t,
 		   int (*)(const void *, const void *));
+#endif
 #endif
 
 #include "tiffio.h"
