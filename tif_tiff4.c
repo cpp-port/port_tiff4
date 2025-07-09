@@ -85,8 +85,8 @@ typedef unsigned char boolean;
 # define HAVE_BOOLEAN            /* prevent jmorecfg.h from redefining it */
 #endif
 
-#include "../jpeg/jpeglib.h"
-#include "../jpeg/jerror.h"
+#include "jpeglib.h"
+#include "jerror.h"
 
 /*
  * Do we want to do special processing suitable for when JSAMPLE is a
