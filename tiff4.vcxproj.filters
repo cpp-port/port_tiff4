@@ -113,13 +113,13 @@
     <ClCompile Include="tif_zip.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="PluginTIFF.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="tif_otiff4.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="tif_tiff4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tif_win32.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
