@@ -22,7 +22,7 @@
  * LIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE 
  * OF THIS SOFTWARE.
  */
-#include "tiffiop.h"
+#include "include/port_tiff4/tiffiop.h"
 
 static const char TIFFVersion[] = TIFFLIB_VERSION_STR;
 

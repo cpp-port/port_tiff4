@@ -29,7 +29,7 @@
  *
  * Builtin Compression Scheme Configuration Support.
  */
-#include "tiffiop.h"
+#include "include/port_tiff4/tiffiop.h"
 
 static int NotConfigured(TIFF*, int);
 

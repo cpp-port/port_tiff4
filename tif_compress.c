@@ -29,7 +29,7 @@
  *
  * Compression Scheme Configuration Support.
  */
-#include "tiffiop.h"
+#include "include/port_tiff4/tiffiop.h"
 
 static int
 TIFFNoEncode(TIFF* tif, const char* method)

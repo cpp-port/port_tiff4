@@ -27,7 +27,7 @@
 #define WIN32_LEAN_AND_MEAN
 #define VC_EXTRALEAN
 
-#include "tiffiop.h"
+#include "include/port_tiff4/tiffiop.h"
 #ifdef JPEG_SUPPORT
 
 /*

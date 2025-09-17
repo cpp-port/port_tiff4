@@ -24,7 +24,7 @@
  * OF THIS SOFTWARE.
  */
 
-#include "tiffiop.h"
+#include "include/port_tiff4/tiffiop.h"
 #include <inttypes.h>
 #ifdef ZIP_SUPPORT
 /*

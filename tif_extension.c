@@ -31,7 +31,7 @@
  * application extension capabilities. 
  */
 
-#include "tiffiop.h"
+#include "include/port_tiff4/tiffiop.h"
 
 int TIFFGetTagListCount( TIFF *tif )
 

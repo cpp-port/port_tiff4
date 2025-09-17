@@ -30,7 +30,7 @@
  * Directory Tag Get & Set Routines.
  * (and also some miscellaneous stuff)
  */
-#include "tiffiop.h"
+#include "include/port_tiff4/tiffiop.h"
 
 /*
  * These are used in the backwards compatibility code...

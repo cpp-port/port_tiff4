@@ -29,7 +29,7 @@
  *
  * Auxiliary Support Routines.
  */
-#include "tiffiop.h"
+#include "include/port_tiff4/tiffiop.h"
 #include "tif_predict.h"
 #include <math.h>
 

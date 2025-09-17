@@ -29,7 +29,7 @@
  * Windows Common RunTime Library.
  */
 
-#include "tif_config.h"
+#include "port_tiff4/tiffconf.h"
 
 #ifdef HAVE_SYS_TYPES_H
 # include <sys/types.h>
@@ -61,7 +61,7 @@
 # include <io.h>
 #endif
 
-#include "tiffiop.h"
+#include "include/port_tiff4/tiffiop.h"
 
 static tmsize_t
 _tiffReadProc(thandle_t fd, void* buf, tmsize_t size)

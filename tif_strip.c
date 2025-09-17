@@ -29,7 +29,7 @@
  *
  * Strip-organized Image Support Routines.
  */
-#include "tiffiop.h"
+#include "include/port_tiff4/tiffiop.h"
 
 /*
  * Compute which strip a (row,sample) value is in.

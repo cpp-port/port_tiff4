@@ -29,7 +29,7 @@
  *
  * "Null" Compression Algorithm Support.
  */
-#include "tiffiop.h"
+#include "include/port_tiff4/tiffiop.h"
 
 static int
 DumpFixupTags(TIFF* tif)

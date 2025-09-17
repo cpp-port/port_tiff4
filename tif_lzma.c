@@ -23,7 +23,7 @@
  * OF THIS SOFTWARE.
  */
 
-#include "tiffiop.h"
+#include "include/port_tiff4/tiffiop.h"
 #ifdef LZMA_SUPPORT
 /*
  * TIFF Library.

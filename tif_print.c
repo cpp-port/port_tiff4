@@ -29,7 +29,7 @@
  *
  * Directory Printing Support
  */
-#include "tiffiop.h"
+#include "include/port_tiff4/tiffiop.h"
 #include <stdio.h>
 
 #include <ctype.h>

@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(tiff4 CXX)
+project(port_tiff4 CXX)
 
 
 if (MSVC)
@@ -62,7 +62,7 @@ list(APPEND library_source
         tif_tiff4.c
         tif_fax3sm.c
         tif_close.c
-        tiff.h
+        include/port_tiff4/tiff.h
         tif_packbits.c
         t4.h
         tif_codec.c
@@ -71,8 +71,8 @@ list(APPEND library_source
         uvcode.h
         tiffvers.h
         tiffio.hxx
-        tiffiop.h
-        tiffconf.h
+        include/port_tiff4/tiffiop.h
+        #tiffconf.h
 )
 
 
@@ -94,7 +94,15 @@ endif()
 
 add_library(${PROJECT_NAME} SHARED ${library_source})
 
-target_link_libraries(${PROJECT_NAME} PRIVATE zlib jpeg)
+target_link_libraries(${PROJECT_NAME} PRIVATE jpeg)
+
+
+if(${LINUX})
+    target_link_libraries(${PROJECT_NAME} PRIVATE z)
+else()
+    target_link_libraries(${PROJECT_NAME} PRIVATE zlib)
+endif()
+
 
 target_compile_definitions(${PROJECT_NAME} PRIVATE OPJ_EXPORTS)
 target_compile_definitions(${PROJECT_NAME} PRIVATE _CRT_DECLARE_NONSTDC_NAMES)

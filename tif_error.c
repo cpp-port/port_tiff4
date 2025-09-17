@@ -27,7 +27,7 @@
 /*
  * TIFF Library.
  */
-#include "tiffiop.h"
+#include "include/port_tiff4/tiffiop.h"
 
 TIFFErrorHandlerExt _TIFFerrorHandlerExt = NULL;
 
