@@ -30,7 +30,7 @@
  * ``Library-private'' definitions.
  */
 
-#include "tiff4/tif_config.h"
+#include "port_tiff4/tiffconf.h"
 
 #ifdef HAVE_FCNTL_H
 # include <fcntl.h>
@@ -72,9 +72,9 @@ extern void *lfind(const void *, const void *, size_t *, size_t,
 #endif
 #endif
 
-#include "tiffio.h"
+#include "../../tiffio.h"
 
-#include "tif_dir.h"
+#include "../../tif_dir.h"
 
 #ifndef STRIP_SIZE_DEFAULT
 # define STRIP_SIZE_DEFAULT 8192
