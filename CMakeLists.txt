@@ -94,7 +94,14 @@ endif()
 
 add_library(${PROJECT_NAME} SHARED ${library_source})
 
-target_link_libraries(${PROJECT_NAME} PRIVATE jpeg)
+
+if(${HAS_SYSTEM_JPEG})
+    set(jpeg_library jpeg)
+else()
+    set(jpeg_library port_jpeg)
+endif()
+
+target_link_libraries(${PROJECT_NAME} PRIVATE ${jpeg_library})
 
 
 if(${LINUX})
