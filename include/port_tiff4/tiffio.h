@@ -30,7 +30,7 @@
 /*
  * TIFF I/O Library Definitions.
  */
-#include "tiff.h"
+#include "port_tiff4/tiff.h"
 #include "tiffvers.h"
 
 /*
