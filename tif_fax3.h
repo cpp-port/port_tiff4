@@ -35,7 +35,7 @@
  * in Frank Cringle's viewfax program;
  *      Copyright (C) 1990, 1995  Frank D. Cringle.
  */
-#include "tiff.h"
+#include "port_tiff4/tiff.h"
 
 /*
  * To override the default routine used to image decoded

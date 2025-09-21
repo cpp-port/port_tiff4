@@ -39,7 +39,7 @@ list(APPEND library_source
         tif_zip.c
         tif_next.c
         tif_compress.c
-        tif_dir.h
+        include/port_tiff4/tif_dir.h
         #tif_unix.c
         tif_version.c
         tif_thunder.c
@@ -62,16 +62,16 @@ list(APPEND library_source
         tif_tiff4.c
         tif_fax3sm.c
         tif_close.c
-        include/port_tiff4/tiff.h
+   include/port_tiff4/tiff.h
         tif_packbits.c
         t4.h
         tif_codec.c
         resource.h
-        tiffio.h
+   include/port_tiff4/tiffio.h
         uvcode.h
-        tiffvers.h
+   include/port_tiff4/tiffvers.h
         tiffio.hxx
-        include/port_tiff4/tiffiop.h
+   include/port_tiff4/tiffiop.h
         #tiffconf.h
 )
 
@@ -132,6 +132,7 @@ message(STATUS "\${OPERATING_SYSTEM_LOWERED_NAME} is ${OPERATING_SYSTEM_LOWERED_
 
 target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
 target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/..)
+target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/../../include)
 target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/../../../operating_system/operating_system-${OPERATING_SYSTEM_LOWERED_NAME}/configuration)
 target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/../../../operating_system/operating_system-${OPERATING_SYSTEM_LOWERED_NAME}/configuration/${PROJECT_NAME})
 

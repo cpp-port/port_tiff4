@@ -72,9 +72,9 @@ extern void *lfind(const void *, const void *, size_t *, size_t,
 #endif
 #endif
 
-#include "../../tiffio.h"
+#include "port_tiff4/tiffio.h"
 
-#include "../../tif_dir.h"
+#include "port_tiff4/tif_dir.h"
 
 #ifndef STRIP_SIZE_DEFAULT
 # define STRIP_SIZE_DEFAULT 8192
