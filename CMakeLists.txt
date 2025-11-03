@@ -104,7 +104,7 @@ endif()
 target_link_libraries(${PROJECT_NAME} PRIVATE ${jpeg_library})
 
 
-if(${LINUX})
+if(${LINUX} OR ${OPENBSD})
     target_link_libraries(${PROJECT_NAME} PRIVATE z)
 else()
     target_link_libraries(${PROJECT_NAME} PRIVATE zlib)
