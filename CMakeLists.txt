@@ -95,7 +95,7 @@ endif()
 add_library(${PROJECT_NAME} SHARED ${library_source})
 
 
-if(${HAS_SYSTEM_JPEG})
+if(${USE_SYSTEM_JPEG})
     set(jpeg_library jpeg)
 else()
     set(jpeg_library port_jpeg)
