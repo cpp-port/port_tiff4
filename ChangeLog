@@ -1524,7 +1524,7 @@
 
 2009-02-06  Frank Warmerdam  <warmerdam@pobox.com>
 
-	* tools/tiffcrop.c: Don't default image->res_unit to INCH.  Now the
+	* tools/tiffcrop.c: Don't default pimage->res_unit to INCH.  Now the
 	test suite should pass.
 
 2009-02-05  Frank Warmerdam  <warmerdam@pobox.com>
