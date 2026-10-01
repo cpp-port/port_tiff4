@@ -110,6 +110,8 @@ else()
     list(APPEND library_references zlib)
 endif()
 
+target_link_libraries(${PROJECT_NAME} PRIVATE ${library_references})
+
 
 target_compile_definitions(${PROJECT_NAME} PRIVATE OPJ_EXPORTS)
 target_compile_definitions(${PROJECT_NAME} PRIVATE _CRT_DECLARE_NONSTDC_NAMES)
