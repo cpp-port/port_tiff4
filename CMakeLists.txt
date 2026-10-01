@@ -84,7 +84,7 @@ if(${WIN32})
 endif()
 
 
-if(${LINUX} OR ${__ANDROID__} OR ${__BSD__})
+if(LINUX OR __ANDROID__ OR __BSD__ OR __SUNOS__)
     list(APPEND library_source
             tif_unix.c
     )
