@@ -84,7 +84,7 @@ if(${WIN32})
 endif()
 
 
-if(LINUX OR __ANDROID__ OR __BSD__ OR __SUNOS__)
+if(LINUX OR __ANDROID__ OR __BSD__ OR __SUNOS__ OR __HAIKU__)
     list(APPEND library_source
             tif_unix.c
     )
@@ -104,7 +104,7 @@ endif()
 target_link_libraries(${PROJECT_NAME} PRIVATE ${jpeg_library})
 
 
-if(${LINUX} OR ${__BSD__} OR ${__ANDROID__} OR ${__SUNOS__})
+if(${LINUX} OR ${__BSD__} OR ${__ANDROID__} OR ${__SUNOS__} OR ${__HAIKU__})
     list(APPEND library_references z)
 else()
     list(APPEND library_references zlib)
